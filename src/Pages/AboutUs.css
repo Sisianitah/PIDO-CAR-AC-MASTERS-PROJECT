@@ -1,0 +1,171 @@
+.about-us {
+  background-color: #020202;
+  font-family: Arial, sans-serif;
+  color: #fefdfd;
+  text-align: center;
+}
+
+.about-hero {
+  background: url("../Assets/WhatsApp\ Image\ 2025-07-27\ at\ 06.56.58_9a058d83.jpg") center/cover no-repeat;
+  padding: 300px 0;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 900px;
+  gap: 30px;
+}
+
+.intro-image img {
+  background-image: url("../Assets/image.png");
+  border-radius: 100%;
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.intro-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.intro-title {
+  color: #050505;
+}
+
+.author {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.mission-section,
+.vision-section {
+  background: #8c8b8b;
+  padding: 50px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.mission-title,
+.vision-title {
+  color: #090909;
+  font-weight: bold;
+}
+
+.learn-more {
+  margin: 30px 0;
+}
+
+.learn-more button {
+  background: #020202;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.learn-more button:hover {
+  background: #e04300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .about-section {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.sub-title {
+  color: #FF9751;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.intro-section,
+.mission-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.intro-text,
+.mission-text {
+  flex: 1;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.intro-img img,
+.mission-section img,
+.vision-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.eng {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.learn-more-btn {
+  background-color: #FF9751;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.learn-more-btn:hover {
+  background-color: #FF9751;
+}
+
+.vision-section {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.vision-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.orange {
+  /* color: #ff6600; */
