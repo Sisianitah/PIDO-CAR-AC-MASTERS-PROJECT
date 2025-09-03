@@ -11,14 +11,14 @@ const teamMembers = [
     role: "DEVELOPER",
   },
   {
-    name: "Naluwemba Latifah",
+    name: "Eng. Pido Michael",
     image: imgEllipse2,
-    role: "DEVELOPER",
+    role: "CEO/FOUNDER",
   },
   {
-    name: "Eng. Pido Michael",
+    name: "Naluwemba Latiffah",
     image: imgEllipse3,
-    role: "CEO",
+    role: "DEVELOPER",
   },
 ];
 
