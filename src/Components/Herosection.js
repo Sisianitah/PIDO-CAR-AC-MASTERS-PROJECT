@@ -80,9 +80,7 @@ function HeroSection() {
         <div className="overlay">
           <div className="hero-content text-center text-white">
             <h1>
-              WELCOME TO
-              <br />
-              CAR A-C MASTERS
+              WELCOME TO CAR A-C MASTERS
             </h1>
             <p>Your trusted experts in car air conditioning service and repair.</p>
             <div className="hero-buttons">

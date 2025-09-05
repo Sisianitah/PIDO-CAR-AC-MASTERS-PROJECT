@@ -2,28 +2,38 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Container, Row, Col, Card, Button, Modal, Form } from 'react-bootstrap';
-import './Services.css';
+import "./Services.css";
 
 const services = [
   {
-    title: 'A/C Repair',
-    icon: 'bi-gear-fill',
-    description: 'Professional air conditioning diagnostics and repairs.',
+    title: "A/C Diagnosis and Inspection",
+    description: "Comprehensive system check including pressure tests, leak detection, and electrical faults.",
+    icon: "bi-thermometer-half",
   },
   {
-    title: 'Gas Refill',
-    icon: 'bi-droplet-fill',
-    description: 'Refilling and testing for optimal cooling performance.',
+    title: "Emergency A/C Repair Services",
+    description: "Quick, on-the-spot diagnostics and repairs for sudden breakdowns.",
+    icon: "bi-lightning",
   },
   {
-    title: 'Compressor Replacement',
-    icon: 'bi-tools',
-    description: 'Quick and reliable compressor installation services.',
+    title: "Leak Detection and Repair",
+    description: "Uses UV dye or electronic methods to identify refrigerant leaks and restore system efficiency.",
+    icon: "bi-droplet",
   },
   {
-    title: 'Leak Detection',
-    icon: 'bi-search',
-    description: 'Accurate detection and fixing of A/C system leaks.',
+    title: "Compressor Replacement",
+    description: "Diagnosing and replacing worn or failed compressors to restore cooling power.",
+    icon: "bi-gear",
+  },
+  {
+    title: "Blower Motor & Cabin Air Filter Replacement",
+    description: "Fixes weak airflow or blocked filters to improve cooling and air quality.",
+    icon: "bi-wind",
+  },
+  {
+    title: "Refrigerant Recharge (Re-gas)",
+    description: "Refills refrigerant to correct levels and restore cooling performance.",
+    icon: "bi-fan",
   },
 ];
 
@@ -43,35 +53,31 @@ const Services = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Send booking data here (axios or fetch)
     alert(`Booking submitted for ${selectedService}`);
     handleClose();
   };
 
   return (
     <section className="services-us">
-      {/* Header Section */}
-      <div className="services-hero">
-        <h1>SERVICES</h1>
+      {/* Hero Section */}
+      <div className="services-hero text-center mb-5">
+        <h1 className="fw-bold">OUR SERVICES</h1>
+        <h4 className="text-muted">Why Choose Us</h4>
       </div>
 
-    <div className="card bg-white shadow">
-
       <Container>
-        <header className="text-center mb-5">
-          <h1 className="fw-bold">Our Services</h1>
-          <h4 className="text-muted">Why Choose Us</h4>
-        </header>
-
         <Row>
           {services.map((service, idx) => (
-            <Col md={6} lg={3} key={idx} className="mb-4">
+            <Col md={6} lg={4} key={idx} className="mb-4">
               <Card className="service-card h-100 text-center p-3 shadow-sm">
                 <i className={`bi ${service.icon} fs-1 text-primary mb-3`}></i>
                 <Card.Body>
                   <Card.Title>{service.title}</Card.Title>
                   <Card.Text>{service.description}</Card.Text>
-                  <Button variant="outline-primary" onClick={() => handleBookClick(service.title)}>
+                  <Button
+                    variant="outline-primary"
+                    onClick={() => handleBookClick(service.title)}
+                  >
                     Book Now
                   </Button>
                 </Card.Body>
@@ -79,12 +85,6 @@ const Services = () => {
             </Col>
           ))}
         </Row>
-
-        <div className="text-center mt-4">
-          <Button variant="warning" className="px-4 py-2 rounded-pill text-white fw-bold">
-            Sign Up
-          </Button>
-        </div>
       </Container>
 
       {/* Booking Modal */}
@@ -112,12 +112,152 @@ const Services = () => {
           </Form>
         </Modal.Body>
       </Modal>
-    </div>
     </section>
   );
 };
 
 export default Services;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap-icons/font/bootstrap-icons.css';
+// import { Container, Row, Col, Card, Button, Modal, Form } from 'react-bootstrap';
+// import './Services.css';
+
+// const services = [
+//   {
+//     title: 'A/C Repair',
+//     icon: 'bi-gear-fill',
+//     description: 'Professional air conditioning diagnostics and repairs.',
+//   },
+//   {
+//     title: 'Gas Refill',
+//     icon: 'bi-droplet-fill',
+//     description: 'Refilling and testing for optimal cooling performance.',
+//   },
+//   {
+//     title: 'Compressor Replacement',
+//     icon: 'bi-tools',
+//     description: 'Quick and reliable compressor installation services.',
+//   },
+//   {
+//     title: 'Leak Detection',
+//     icon: 'bi-search',
+//     description: 'Accurate detection and fixing of A/C system leaks.',
+//   },
+// ];
+
+// const Services = () => {
+//   const [showModal, setShowModal] = useState(false);
+//   const [selectedService, setSelectedService] = useState('');
+
+//   const handleBookClick = (serviceTitle) => {
+//     setSelectedService(serviceTitle);
+//     setShowModal(true);
+//   };
+
+//   const handleClose = () => {
+//     setShowModal(false);
+//     setSelectedService('');
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     // Send booking data here (axios or fetch)
+//     alert(`Booking submitted for ${selectedService}`);
+//     handleClose();
+//   };
+
+//   return (
+//     <section className="services-us">
+//       {/* Header Section */}
+//       <div className="services-hero">
+//         <h1>SERVICES</h1>
+//       </div>
+
+//     <div className="card bg-white shadow">
+
+//       <Container>
+//         <header className="text-center mb-5">
+//           <h1 className="fw-bold">Our Services</h1>
+//           <h4 className="text-muted">Why Choose Us</h4>
+//         </header>
+
+//         <Row>
+//           {services.map((service, idx) => (
+//             <Col md={6} lg={3} key={idx} className="mb-4">
+//               <Card className="service-card h-100 text-center p-3 shadow-sm">
+//                 <i className={`bi ${service.icon} fs-1 text-primary mb-3`}></i>
+//                 <Card.Body>
+//                   <Card.Title>{service.title}</Card.Title>
+//                   <Card.Text>{service.description}</Card.Text>
+//                   <Button variant="outline-primary" onClick={() => handleBookClick(service.title)}>
+//                     Book Now
+//                   </Button>
+//                 </Card.Body>
+//               </Card>
+//             </Col>
+//           ))}
+//         </Row>
+
+//         <div className="text-center mt-4">
+//           <Button variant="warning" className="px-4 py-2 rounded-pill text-white fw-bold">
+//             Sign Up
+//           </Button>
+//         </div>
+//       </Container>
+
+//       {/* Booking Modal */}
+//       <Modal show={showModal} onHide={handleClose} centered>
+//         <Modal.Header closeButton>
+//           <Modal.Title>Book {selectedService}</Modal.Title>
+//         </Modal.Header>
+//         <Modal.Body>
+//           <Form onSubmit={handleSubmit}>
+//             <Form.Group className="mb-3">
+//               <Form.Label>Your Name</Form.Label>
+//               <Form.Control type="text" placeholder="Enter full name" required />
+//             </Form.Group>
+//             <Form.Group className="mb-3">
+//               <Form.Label>Contact</Form.Label>
+//               <Form.Control type="text" placeholder="Phone or email" required />
+//             </Form.Group>
+//             <Form.Group className="mb-3">
+//               <Form.Label>Preferred Date</Form.Label>
+//               <Form.Control type="date" required />
+//             </Form.Group>
+//             <Button type="submit" variant="primary" className="w-100">
+//               Confirm Booking
+//             </Button>
+//           </Form>
+//         </Modal.Body>
+//       </Modal>
+//     </div>
+//     </section>
+//   );
+// };
+
+// export default Services;
 
 
 
