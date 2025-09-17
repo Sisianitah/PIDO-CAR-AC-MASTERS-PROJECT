@@ -38,9 +38,9 @@ function Contact() {
         <div className="map-section">
           <iframe
             title="Car A-C Masters Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8301625389974!2d32.60607507495771!3d0.35676526398014256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb0e38f21061%3A0xe5195b2b20b2b540!2sNtinda%20-%20Kisaasi%20Rd%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sug!4v1721215792845!5m2!1sen!2sug"
-            width="100%"
-            height="300"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7405736030237!2d32.60886687596178!3d0.35768676395935006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbbdd7d3cc13f%3A0x38e47022cb71a207!2sCAR%20A-C%20MASTERS!5e0!3m2!1sen!2sug!4v1758020747802!5m2!1sen!2sug"
+            width="600%"
+            height="450"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"

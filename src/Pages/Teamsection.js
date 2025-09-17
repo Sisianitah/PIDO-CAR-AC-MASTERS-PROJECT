@@ -1,7 +1,7 @@
 import React from "react";
 import "./Teamsection.css"; // make sure the file name matches exactly
 import imgEllipse1 from "../Assets/AMBASSADOR.jpg";
-import imgEllipse2 from "../Assets/1454 resize.jpg";
+import imgEllipse2 from "../Assets/WhatsApp Image 2025-08-01 at 22.55.30_1629e010.jpg";
 import imgEllipse3 from "../Assets/WhatsApp Image 2025-08-05 at 15.56.04_35c94cd1.jpg";
 
 const teamMembers = [
@@ -25,6 +25,7 @@ const teamMembers = [
 export default function Teamsection() {
   return (
     <section className="team-section">
+      <h2 className="team-title">MEET OUR TEAM</h2>
       <div className="team-header">
         <span className="divider"></span>
       </div>

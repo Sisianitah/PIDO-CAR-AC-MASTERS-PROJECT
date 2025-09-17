@@ -1,12 +1,12 @@
 .about-us {
-  background-color: #020202;
+  background-color: #faf9f9;
   font-family: Arial, sans-serif;
-  color: #fefdfd;
+  color: #060606;
   text-align: center;
 }
 
 .about-hero {
-  background: url("../Assets/WhatsApp\ Image\ 2025-07-27\ at\ 06.56.58_9a058d83.jpg") center/cover no-repeat;
+  background: url("../Assets/WhatsApp\ Image\ 2025-09-10\ at\ 01.19.07_a24a75ff.jpg") center/cover no-repeat;
   padding: 300px 0;
   color: white;
   font-size: 2rem;
@@ -24,9 +24,9 @@
 
 .intro-image img {
   background-image: url("../Assets/image.png");
-  border-radius: 100%;
-  width: 400px;
-  height: 600px;
+  border-radius: 400%;
+  width: 600px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -46,10 +46,11 @@
 
 .mission-section,
 .vision-section {
-  background: #8c8b8b;
+  background: #dbdada;
   padding: 50px;
   margin: 20px auto;
   max-width: 800px;
+  border: 3px solid #002147;
   border-radius: 8px;
 }
 

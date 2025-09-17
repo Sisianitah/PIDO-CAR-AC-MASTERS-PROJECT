@@ -6,8 +6,8 @@ import "./Herosection.css";
 
 // Import your images
 import heroImg1 from "../Assets/IMG_20250128_145646_545.jpg";
-import heroImg2 from "../Assets/RBG CAR LOGO.png";
-import heroImg3 from "../Assets/1454.jpg";
+import heroImg2 from "../Assets/IMG_20250621_122806_908.jpg";
+import heroImg3 from "../Assets/IMG_20250323_131214_543.jpg";
 
 const images = [heroImg1, heroImg2, heroImg3];
 
@@ -28,8 +28,9 @@ function HeroSection() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-black px-4">
         <a className="navbar-brand text-warning fw-bold" href="/">
          <img src={logo} alt='' className='logo' />
-          Breathe Easy, Drive Cool
+         
         </a>
+        <h6 className="text-warning fw-bold">Breathe Easy, Drive Cool</h6>
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">

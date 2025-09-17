@@ -5,65 +5,80 @@ import logo from '../Assets/RBG CAR LOGO.png';
 
 function Footer() {
   return (
-    <footer className="footer-container">
-      {/* Top Section */}
-      <div className="footer-top">
-        <div className="footer-logo-section">
-          <img src={logo} alt="Car A-C Masters Logo" className="logo" />
-          <p>Car A-C MASTERS — your trusted experts in car air conditioning service and repair.</p>
-          
-          <form className="newsletter">
-            <label>Subscribe for News Letters</label>
-            <input type="email" placeholder="Email" required />
-            <button type="submit">submit</button>
-          </form>
-        </div>
+      /* Footer */
+      <footer className="footer mt-5 text-white">
+        <div className="container py-4">
+          <div className="row">
+            {/* Left Logo + About */}
+            <div className="col-md-3 mb-3">
+              <img src={logo} alt="Car A-C Masters Logo" className="logo"  />
+              {/* <h5 className="fw-bold">CAR A-C MASTERS</h5> */}
+              <p>
+                Your trusted experts in car air conditioning service and repair.
+              </p>
+              <form className="newsletter-form">
+                <input
+                  type="email"
+                  className="form-control mb-2"
+                  placeholder="Email"
+                />
+                <button className="btn btn-warning w-100">Submit</button>
+              </form>
+            </div>
 
-        {/* Content Links */}
-        <div className="footer-column">
-          <h4>CONTENT</h4>
-          <ul>
-            <li>INTRODUCTION</li>
-            <li>MISSION</li>
-            <li>VISION</li>
-            <li>SERVICE</li>
-            <li>REVIEWS</li>
-            <li>GALLERY</li>
-            <li>FAQ'S</li>
-          </ul>
-        </div>
+            {/* Content Links */}
+            <div className="col-md-3 mb-3">
+              <h6 className="fw-bold">CONTENT</h6>
+              <ul className="list-unstyled">
+                <li>Introduction</li>
+                <li>Mission</li>
+                <li>Vision</li>
+                <li>Service</li>
+                <li>Reviews</li>
+                <li>Gallery</li>
+                <li>FAQ's</li>
+              </ul>
+            </div>
 
-        {/* Page Links */}
-        <div className="footer-column">
-          <h4>PAGES</h4>
-          <ul>
-            <li><Link to="/">HOME</Link></li>
-            <li><Link to="/about">ABOUT US</Link></li>
-            <li><Link to="/services">SERVICE</Link></li>
-            <li><Link to="/blogs">BLOGS</Link></li>
-            <li><Link to="/contact">CONTACT</Link></li>
-            <li><Link to="/testimonials">TESTIMONIALS</Link></li>
-          </ul>
-        </div>
+            {/* Pages */}
+            <div className="col-md-3 mb-3">
+              <h6 className="fw-bold">PAGES</h6>
+              <ul className="list-unstyled">
+                <li><Link to="/">HOME</Link></li>
+                <li><Link to="/about">ABOUT US</Link></li>
+                <li><Link to="/services">SERVICE</Link></li>
+                <li><Link to="/blogs">BLOGS</Link></li>
+                <li><Link to="/contact">CONTACT</Link></li>
+                <li><Link to="/testimonials">TESTIMONIALS</Link></li>
+              </ul>
+            </div>
 
-        {/* Contact Info */}
-        <div className="footer-column">
-          <h4>CONTACT INFORMATION</h4>
-          <ul>
-            <li>📧 caracmasters4@gmail.com</li>
-            <li>💬 +256 786068830</li>
-            <li>📞 +256 758681323</li>
-            <li>📷 CAR A-C MASTERS</li>
-            <li>📘 CAR A-C MASTERS</li>
-          </ul>
+            {/* Contact Info */}
+            <div className="col-md-3 mb-3">
+              <h6 className="fw-bold">CONTACT INFORMATION</h6>
+              <p>
+                <i className="bi bi-envelope-fill me-2"></i>
+                caracmasters4@gmail.com
+              </p>
+              <p>
+                <i className="bi bi-whatsapp me-2"></i>
+                +256 780068830
+              </p>
+              <p>
+                <i className="bi bi-telephone-fill me-2"></i>
+                +256 758681323
+              </p>
+              <p>
+                <i className="bi bi-facebook me-2"></i>
+                CAR A-C MASTERS
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-
-      {/* Bottom Section */}
-      <div className="footer-bottom">
-        <p>Copyright © 2025 Car AC Masters. All rights reserved</p>
-      </div>
-    </footer>
+        <div className="text-center py-2 bg-dark">
+          © 2025 Car A-C Masters. All rights reserved
+        </div>
+      </footer>
   );
 }
 

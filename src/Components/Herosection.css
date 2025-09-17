@@ -21,13 +21,14 @@
 
 /* Dark overlay */
 .overlay {
-  background-color: rgba(0,0,0, 0.55);
+  background-color: #020202;
   color: white;
   text-decoration-color: aliceblue;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
   align-items: center;
+  position: sticky;
   top: 0;
   z-index: 10;
   /* background-color: rgba(0, 0, 0, 0.55);

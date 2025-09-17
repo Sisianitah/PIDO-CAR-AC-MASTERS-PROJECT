@@ -78,3 +78,21 @@
   padding-top: 1rem;
   font-size: 0.9rem;
 }
+
+.footer {
+  background: #111;
+}
+
+.footer h6, .footer h5 {
+  color: orange;
+}
+
+.footer ul li {
+  color:white;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer ul li:hover {
+  text-decoration: underline;
+}

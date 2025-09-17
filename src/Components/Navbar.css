@@ -209,7 +209,7 @@
 
 /* Phone Icon */
 .phone-icon {
-  background: #444;
+  background: #070707;
 }
 
 /* Glow + Pulse Hover Effect */
@@ -243,8 +243,8 @@
   position: absolute;
   top: 50%;
   font-size: 30px;
-  background: orange;
-  color: white;
+  background: rgb(7, 5, 0);
+  color: rgb(198, 197, 197);
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
