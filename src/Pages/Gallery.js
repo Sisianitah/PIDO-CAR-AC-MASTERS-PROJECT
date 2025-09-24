@@ -1,8 +1,5 @@
 import React from "react";
 import "./Gallery.css";
-// import heroImg1 from "../Assets/IMG_20250128_145646_545.jpg";
-// import heroImg2 from "../Assets/IMG_20250621_122806_908.jpg";
-// import heroImg3 from "../Assets/IMG_20250323_131214_543.jpg";
 
 const images = [
   "/images/gallery1.jpg",

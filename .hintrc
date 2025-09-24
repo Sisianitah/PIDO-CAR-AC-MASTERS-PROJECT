@@ -3,6 +3,14 @@
     "development"
   ],
   "hints": {
-    "detect-css-reflows/composite": "off"
+    "detect-css-reflows/composite": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
+    ]
   }
 }
