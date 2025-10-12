@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 import { Link } from "react-router-dom";
+import introimage from "../Assets/WhatsApp Image 2025-08-01 at 22.55.30_1629e010.jpg";
 
 const AboutUs = () => {
   return (
@@ -13,7 +14,7 @@ const AboutUs = () => {
       {/* Introduction */}
       <div className="intro-section">
         <div className="intro-image">
-          <img src="./Assets/WhatsApp Image 2025-08-01 at 22.55.30_1629e010.jpg" alt="Technician at work" />
+          <img src={introimage} alt="Technician at work" />
         </div>
         <div className="intro-text">
           <h3 className="intro-title">Introduction</h3>

@@ -28,9 +28,19 @@ function HeroSection() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-black px-4">
         <a className="navbar-brand text-warning fw-bold" href="/">
          <img src={logo} alt='' className='logo' />
+           {/* <!-- Sidebar toggle --> */}
+        <div class="sidebar-toggle" id="sidebarToggle">
+         <i class="fas fa-address-card"></i>
+        </div>
+
+         {/* <!-- Hamburger menu for nav links --> */}
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+
          
         </a>
-        <h6 className="text-warning fw-bold">Breathe Easy, Drive Cool</h6>
+        {/* <h6 className="text-warning fw-bold">Breathe Easy, Drive Cool</h6> */}
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
@@ -98,7 +108,7 @@ function HeroSection() {
 
       {/* Floating Contact Icons */}
       <div className="floating-icons">
-        <a href="https://wa.me/0786068830" target="_blank" rel="noreferrer">
+        <a href="https://wa.me/+256786068830" target="_blank" rel="noreferrer">
           <FaWhatsapp className="whatsapp-icon" />
         </a>
         <a href="tel:+256 786068830">

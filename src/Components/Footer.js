@@ -62,7 +62,8 @@ function Footer() {
               </p>
               <p>
                 <i className="bi bi-whatsapp me-2"></i>
-                +256 780068830
+                +256 786 068830
+
               </p>
               <p>
                 <i className="bi bi-telephone-fill me-2"></i>
@@ -70,7 +71,7 @@ function Footer() {
               </p>
               <p>
                 <i className="bi bi-facebook me-2"></i>
-                CAR A-C MASTERS
+                <a href="#" target="_blank" rel="noopener noreferrer" className="text-white"></a>
               </p>
             </div>
           </div>

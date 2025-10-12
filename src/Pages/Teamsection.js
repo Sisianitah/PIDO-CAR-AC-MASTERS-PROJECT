@@ -1,5 +1,5 @@
 import React from "react";
-import "./Teamsection.css"; // make sure the file name matches exactly
+import "./Teamsection.css"; 
 import imgEllipse1 from "../Assets/AMBASSADOR.jpg";
 import imgEllipse2 from "../Assets/WhatsApp Image 2025-08-01 at 22.55.30_1629e010.jpg";
 import imgEllipse3 from "../Assets/WhatsApp Image 2025-08-05 at 15.56.04_35c94cd1.jpg";

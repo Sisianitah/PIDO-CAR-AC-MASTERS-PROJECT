@@ -5,6 +5,200 @@
   text-align: center;
 }
 
+/* ✨ FADE-IN ANIMATIONS ✨ */
+
+/* Keyframes for fade-in and slide-up effect */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for simple fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Hero Section */
+.about-hero {
+  background: url("../Assets/WhatsApp Image 2025-09-10 at 01.19.07_a24a75ff.jpg") center/cover no-repeat;
+  padding: 300px 0;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.about-hero h1 {
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Intro Section */
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 1000px;
+  gap: 40px;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.intro-image img {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.intro-title {
+  color: #050505;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.author {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #002147;
+}
+
+/* Mission & Vision */
+.mission-section,
+.vision-section {
+  background: #dbdada;
+  padding: 50px 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border: 3px solid #002147;
+  border-radius: 8px;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.mission-title,
+.vision-title {
+  color: #090909;
+  font-weight: bold;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.9s;
+}
+
+/* Learn More Button */
+.learn-more {
+  margin: 30px 0;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 1.2s;
+}
+
+.learn-more button {
+  background: #020202;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.learn-more button:hover {
+  background: #e04300;
+}
+
+/* 🔹 RESPONSIVE DESIGN 🔹 */
+@media (max-width: 900px) {
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text {
+    text-align: center;
+  }
+
+  .intro-image img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .mission-section,
+  .vision-section {
+    width: 90%;
+  }
+
+  .about-hero {
+    padding: 180px 0;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .intro-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .intro-title {
+    font-size: 1.2rem;
+  }
+
+  .mission-section,
+  .vision-section {
+    padding: 30px 15px;
+  }
+
+  .learn-more button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-us {
+  background-color: #faf9f9;
+  font-family: Arial, sans-serif;
+  color: #060606;
+  text-align: center;
+}
+
 .about-hero {
   background: url("../Assets/WhatsApp\ Image\ 2025-09-10\ at\ 01.19.07_a24a75ff.jpg") center/cover no-repeat;
   padding: 300px 0;
@@ -23,11 +217,11 @@
 }
 
 .intro-image img {
-  background-image: url("../Assets/image.png");
-  border-radius: 400%;
-  width: 600px;
-  height: 400px;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .intro-text {
@@ -77,96 +271,3 @@
 .learn-more button:hover {
   background: #e04300;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .about-section {
-  padding: 40px 20px;
-  background: #fff;
-  text-align: center;
-}
-
-.title {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-}
-
-.sub-title {
-  color: #FF9751;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.intro-section,
-.mission-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.intro-text,
-.mission-text {
-  flex: 1;
-  padding: 20px;
-  max-width: 500px;
-}
-
-.intro-img img,
-.mission-section img,
-.vision-section img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-
-.eng {
-  font-weight: bold;
-  margin-top: 10px;
-  color: #333;
-}
-
-.learn-more-btn {
-  background-color: #FF9751;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  margin-top: 15px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.learn-more-btn:hover {
-  background-color: #FF9751;
-}
-
-.vision-section {
-  margin-top: 40px;
-  padding: 20px;
-}
-
-.vision-section p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-.orange {
-  /* color: #ff6600; */

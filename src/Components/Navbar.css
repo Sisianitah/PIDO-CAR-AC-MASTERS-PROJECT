@@ -135,6 +135,8 @@
   color: black;
 }
 
+
+
 /* ---------------- HERO CONTENT ---------------- */
 .hero-content {
   text-align: center;
@@ -196,7 +198,7 @@
 .phone-icon {
   font-size: 30px;
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 100%;
   color: white;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;

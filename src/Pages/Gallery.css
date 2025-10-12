@@ -1,14 +1,18 @@
 .gallery-page {
-  background: #fff;
+  background: #070707;
+  padding-bottom: 40px;
 }
 
 .gallery-img {
   border: 2px solid #eee;
   border-radius: 5px;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease-in-out;
   width: 100%;
   height: 200px;
   object-fit: cover;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.8s forwards;
 }
 
 .gallery-img:hover {
@@ -16,19 +20,14 @@
   border-color: orange;
 }
 
+/* Animation Keyframes */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .footer {
   background: #111;
 }
-
-/* .footer h6, .footer h5 {
-  color: orange;
-}
-
-.footer ul li {
-  margin-bottom: 8px;
-  cursor: pointer;
-}
-
-.footer ul li:hover {
-  text-decoration: underline;
-} */
